@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  margin: 0 auto;
+  color: #111;
+  font-family: Poppins, "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande",
+    sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Proza Libre", "Helvetica Neue", "Helvetica", "Arial",
+    "Lucida Grande", sans-serif;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  display: flex;
+}
+
+nav {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+nav a {
+  display: block;
+  color: #111;
+  border-bottom: 1px dotted #ccc;
+  text-decoration: none;
+  padding: 0.2rem;
+}
+
+main {
+  display: grid;
+  margin: 0 auto;
+  grid-template-areas:
+    "about about sidebar"
+    "project project project"
+    "skill skill skill";
+  grid-gap: 10px;
+}
+
+main > * {
+  background: #efefef;
+  border: 1px solid #ccc;
+}
+
+#about {
+  grid-area: about;
+}
+
+aside {
+  grid-area: sidebar;
+}
+
+#projects {
+  grid-area: project;
+}
+
+#skills {
+  grid-area: skill;
+}
+
+footer {
+  margin: auto 0 0;
+  text-align: center;
+}
