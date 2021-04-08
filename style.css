@@ -95,10 +95,16 @@ nav li {
 nav a {
   display: block;
   color: #111;
-  border-bottom: 1px dotted #ccc;
   text-decoration: none;
-  padding: 0.2rem;
+  padding: 0.4rem 0.8rem;
   font-weight: bold;
+  border: 2px solid #111;
+  box-shadow: 2px 2px #111;
+}
+
+nav a:hover {
+  background: #111;
+  color: white;
 }
 
 section,
@@ -149,4 +155,45 @@ aside img {
 footer {
   margin: auto 0 0;
   text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+footer span {
+  color: red;
+}
+
+@media only screen and (max-width: 910px) {
+  body {
+    padding: 0 1rem;
+  }
+
+  .grid {
+    display: block;
+  }
+
+  header,
+  nav,
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    /* margin: 0 auto; */
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  header {
+    display: block;
+    text-align: center;
+  }
+  nav li {
+    margin: 0.5rem;
+  }
+
+  .skills-container {
+    display: block;
+  }
+  .skills-container i {
+    margin: 0.5rem;
+  }
 }
